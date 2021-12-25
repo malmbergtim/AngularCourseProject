@@ -1,0 +1,19 @@
+<h3>About me</h3>
+
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, cum
+      eveniet? Eius deleniti nihil, voluptate ipsum cumque eligendi recusandae
+      neque tenetur omnis. Aliquid saepe exercitationem obcaecati id enim odit
+      minima?
+    </p>
+  </div>
+</div>
+<div *ngFor="let hobby of hobbies">
+  <h4>{{ hobby.name }}</h4>
+  <p>{{ hobby.description }}</p>
+</div>
+
+<router-outlet></router-outlet>
+<button (click)="showContactForm()">Contact me</button>
